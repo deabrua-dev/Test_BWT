@@ -12,7 +12,7 @@
 
 ![image](https://i.imgur.com/qMwCzGN.png)
 
-Связь многи ко многим. У множества продуктов, множество тегов.
+Связь многие ко многим. У множества продуктов, множество тегов.
 Запрос: 
 ```
 SELECT products.id, products.name, COUNT(product_tags.product_id) as product_tags_count
