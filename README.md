@@ -19,7 +19,7 @@ SELECT products.id, products.name, COUNT(product_tags.product_id) as product_tag
 FROM product_tags
 JOIN products ON product_tags.product_id = products.id
 GROUP BY products.id
-HAVING product_tags_count >= 10
+HAVING product_tags_count > 10
 ```
 
 Делал и тестировал через phpMyAdmin и MariaDB
